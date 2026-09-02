@@ -10,7 +10,12 @@ class NotesView extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: Column(children: [SizedBox(height: 50), NotesViewBody()]),
+        child: Column(
+          children: [
+            SizedBox(height: 50),
+            Expanded(child: NotesViewBody()),
+          ],
+        ),
       ),
     );
   }
