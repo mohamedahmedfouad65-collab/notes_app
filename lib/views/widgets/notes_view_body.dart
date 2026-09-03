@@ -9,11 +9,14 @@ class NotesViewBody extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        customAppBar(),
-        Expanded(child: notesListView()),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
+      child: Column(
+        children: [
+          customAppBar(),
+          Expanded(child: notesListView()),
+        ],
+      ),
     );
   }
 }
